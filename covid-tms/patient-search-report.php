@@ -25,14 +25,13 @@ error_reporting(0);
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-<style type="text/css">
-label{
-    font-size:16px;
-    font-weight:bold;
-    color:#000;
-}
-
-</style>
+    <style type="text/css">
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -40,7 +39,7 @@ label{
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-<?php include_once('includes/sidebar.php');?>
+        <?php include_once('includes/sidebar.php'); ?>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -49,7 +48,7 @@ label{
             <div id="content">
 
                 <!-- Topbar -->
-          <?php include_once('includes/topbar.php');?>
+                <?php include_once('includes/topbar.php'); ?>
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
@@ -58,30 +57,33 @@ label{
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Search Report</h1>
 
-<form method="post" action="patient-report.php">
-  <div class="row">
+                    <form method="post" action="patient-report.php">
+                        <div class="row">
 
-                        <div class="col-lg-6">
+                            <div class="col-lg-6">
 
-                            <!-- Basic Card Example -->
-                            <div class="card shadow mb-4">
-                          
-                                <div class="card-body">
-                       <div class="form-group">
-                                             <label>Search By Patient Name or Mobile Number or Order Number</label>
-                                            <input type="text" class="form-control" id="searchdata" name="searchdata" required="true" placeholder="Enter name or mobile number or Order Number">
+                                <!-- Basic Card Example -->
+                                <div class="card shadow mb-4">
+
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Search By Patient Name or Mobile Number or Order Number</label>
+                                            <input type="text" class="form-control" id="searchdata" name="searchdata"
+                                                required="true"
+                                                placeholder="Enter name or mobile number or Order Number">
                                         </div>
 
 
-<div class="form-group">
-                                 <input type="submit" class="btn btn-primary btn-user btn-block" name="search" value="Search">                           
-                             </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-primary btn-user btn-block"
+                                                name="search" value="Search">
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-</form>
+                    </form>
 
 
                 </div>
@@ -90,7 +92,7 @@ label{
             </div>
             <!-- End of Main Content -->
 
-           <?php include_once('includes/footer.php');?>
+            <?php include_once('includes/footer.php'); ?>
 
         </div>
         <!-- End of Content Wrapper -->
@@ -100,7 +102,7 @@ label{
 
     <!-- Scroll to Top Button-->
 
-<a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
@@ -117,4 +119,5 @@ label{
     <script src="js/sb-admin-2.min.js"></script>
 
 </body>
+
 </html>

@@ -94,11 +94,11 @@ return true;
                                 <input type="text" name="contactno" placeholder="Contact Number" autocomplete="off" class="form-control">
                                         </div>
                                     <div class="form-group">
-                                      <input type="password" name="newpassword" placeholder="New Password" autocomplete="off" class="form-control">
+                                      <input type="password" name="newpassword" placeholder="New Password" autocomplete="off" class="form-control" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$">
                                         </div>
 
                                             <div class="form-group">
-                               <input type="password" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" class="form-control">
+                               <input type="password" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" class="form-control" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!]).{8,}$">
                                         </div>
 
                         <input type="submit" name="submit" class="btn btn-primary btn-user btn-block" value="Submit">
